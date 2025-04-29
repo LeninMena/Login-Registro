@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BackendLoginApplication {
 
     public static void main(String[] args) {
-        SpringApplication(BackendLoginApplication.class, args);
+        SpringApplication.run(BackendLoginApplication.class, args);
+        //error encontrado
+        
     }
+ 
 }
