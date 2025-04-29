@@ -2,7 +2,7 @@ package com.example.demo;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
-
+//"Entidad JPA para la tabla de usuarios. Define las propiedades y relaciones del modelo de usuario en la base de datos."
 @Entity
 @Table(name = "tbl_users")
 public class User {
