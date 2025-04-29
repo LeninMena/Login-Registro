@@ -7,6 +7,7 @@ import java.util.Optional;
 import java.util.Map;
 import org.springframework.http.HttpStatus;
 
+//"Controlador REST para manejar las rutas de registro y login de usuarios. Expone los endpoints de la API."
 @RestController
 @RequestMapping("/api/users")
 @CrossOrigin(origins = "*")
