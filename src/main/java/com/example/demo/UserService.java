@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+//"Servicio para manejar la lógica de negocio de usuarios. Incluye la lógica de registro, login y validación de contraseñas."
 import java.util.Optional;
 
 @Service
