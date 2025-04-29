@@ -7,7 +7,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
-//"Implementación de utilidades para la creación y validación de JWT (JSON Web Tokens) para manejo de sesiones."
+//"Configuración de seguridad para habilitar autenticación y autorización en la aplicación. Uso de JWT para autenticación."
 @Configuration
 public class SecurityConfig {
 

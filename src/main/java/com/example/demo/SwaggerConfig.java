@@ -5,6 +5,9 @@ import io.swagger.v3.oas.models.info.Info;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//"Configuración de Swagger para la documentación de la API. Permite la visualización interactiva de los endpoints de la API."
+
+
 @Configuration
 public class SwaggerConfig {
 
