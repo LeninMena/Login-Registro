@@ -7,11 +7,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import jakarta.annotation.PostConstruct;
-import java.security.Key;  // Correcto import de Key
+import java.security.Key;
 import java.util.Date;
 import java.util.Optional;
 import io.jsonwebtoken.security.Keys;
-import jakarta.annotation.PostConstruct;
 
 @Service
 public class UserService {
@@ -64,5 +63,15 @@ public class UserService {
                 .setExpiration(new Date(System.currentTimeMillis() + 86400000)) // El token expira en 1 día
                 .signWith(jwtSecret, SignatureAlgorithm.HS256) // Usar la clave secreta con el algoritmo HS256
                 .compact();
+    }
+
+    // Método para eliminar un usuario por nombre de usuario
+    public void deleteUser(String username) {
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isPresent()) {
+            userRepository.delete(user.get());
+        } else {
+            throw new RuntimeException("Usuario no encontrado.");
+        }
     }
 }
