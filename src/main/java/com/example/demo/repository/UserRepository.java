@@ -1,6 +1,7 @@
-package com.example.demo;
+package com.example.demo.repository;
 // "Repositorio JPA para realizar operaciones CRUD sobre la entidad 'User' en la base de datos."
 
+import com.example.demo.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
